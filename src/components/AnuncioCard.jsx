@@ -3,7 +3,7 @@ import { Card, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import buscarJogo from "./BuscarJogo";
 import "../cssComponents/AnuncioCard.css";
-import fundo from "../imagens/imagemControle.png";
+import fundo from "../imagens/imagemControleCardCompressed.webp";
 
 export default function AnuncioCard({
   id,
@@ -13,17 +13,17 @@ export default function AnuncioCard({
   horario,
 }) {
   const navigate = useNavigate();
-  const [imagem, setImagem] = useState(null);
+  // const [imagem, setImagem] = useState(null);
 
-  useEffect(() => {
-    async function pegarImagem() {
-      const dadosJogo = await buscarJogo(jogo);
-      if (dadosJogo) {
-        setImagem(dadosJogo[0].background_image);
-      }
-    }
-    pegarImagem();
-  }, [jogo]);
+  // useEffect(() => {
+  //   async function pegarImagem() {
+  //     const dadosJogo = await buscarJogo(jogo);
+  //     if (dadosJogo) {
+  //       setImagem(dadosJogo[0].background_image);
+  //     }
+  //   }
+  //   pegarImagem();
+  // }, [jogo]);
 
   return (
     <Card
