@@ -1,0 +1,22 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* body {
+  background-image: url("./imagens/renderizacao-3d-de-fundo-de-textura-hexagonal.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+} */
+.appContainer {
+  background-size: "cover";
+}
+
+@media (max-width: 768px) {
+  .appContainer {
+    background-size: contain;
+  }
+}

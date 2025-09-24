@@ -1,0 +1,12 @@
+.cardAnuncio {
+  border-radius: 12px;
+  padding: 20px;
+  border: 2px solid #0ff;
+  box-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+  transition: 0.3s;
+}
+
+.cardAnuncio:hover {
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff;
+  transform: translateY(-5px);
+}

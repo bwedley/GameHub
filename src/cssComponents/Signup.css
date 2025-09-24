@@ -1,0 +1,11 @@
+.body-signup {
+  /* background-color: darkslategray; */
+  min-height: 100vh;
+  min-width: 50vh;
+}
+
+@media (max-width: 768px) {
+  .custom-checkbox input[type="checkbox"] {
+    transform: scale(1.4);
+  }
+}
