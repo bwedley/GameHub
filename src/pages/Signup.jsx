@@ -3,7 +3,7 @@ import { Col, Container, Form, Row, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import "../cssComponents/Signup.css";
-import fundo from "../imagens/background2.jpg";
+import fundo from "../imagens/backgroundweb.webp";
 import { useAuth } from "../contexts/AuthContext";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth } from "../services/firebase";
@@ -61,9 +61,9 @@ export default function Signup() {
       className="body-signup"
       style={{
         backgroundImage: `url(${fundo})`,
-        backgroundSize: "contain",
+        backgroundSize: "cover",
         backgroundPosision: "center",
-        cursor: "pointer",
+        
       }}
     >
       <Row className="justify-content-md-center text-white p-3">

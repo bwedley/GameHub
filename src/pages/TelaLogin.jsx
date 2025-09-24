@@ -3,7 +3,7 @@ import { Col, Container, Form, Row, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import "../cssComponents/Signup.css";
-import fundo from "../imagens/background2.jpg";
+import fundo from "../imagens/backgroundweb.webp";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../services/firebase";
 import { useAuth } from "../contexts/AuthContext";
@@ -68,9 +68,8 @@ export default function TelaLogin() {
       style={{
         // backgroundImage: imagem ? `url(${imagem})` : "none",
         backgroundImage: `url(${fundo})`,
-        backgroundSize: "contain",
+        backgroundSize: "cover",
         backgroundPosision: "center",
-        cursor: "pointer",
       }}
     >
       <Row className="justify-content-md-center text-white p-3">
@@ -116,7 +115,6 @@ export default function TelaLogin() {
                 {errors.password?.message}
               </Form.Control.Feedback>
             </Form.Group>
-
             <Button variant="primary" type="submit" className="mb-3 w-100">
               Login
             </Button>
@@ -124,17 +122,20 @@ export default function TelaLogin() {
               onClick={pathTelaInicial}
               variant="secondary"
               className="w-100 mb-3"
-            >
+              >
               Voltar
             </Button>
-            <div
-              className="mt-3 text-center text-primary"
-              onClick={pathCadastro}
-              variant="link"
-              style={{ cursor: "pointer" }}
-            >
-              Não possui conta? Cadastre-se
-            </div>
+            
+              <div className="text-center">
+                <Button
+                  className=""
+                  onClick={pathCadastro}
+                  variant="danger"
+                  style={{ cursor: "pointer", color: "#fff" }}
+                >
+                  Não possui conta? Cadastre-se
+                </Button>
+              </div>
           </Form>
         </Col>
       </Row>
