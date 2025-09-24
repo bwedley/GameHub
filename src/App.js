@@ -1,6 +1,6 @@
 import "./styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import background from "./imagens/imagemControle.png";
+import background from "./imagens/imagemControleWeb.webp";
 import PagesRoutes from "./components/PagesRoutes";
 import { AuthProvider } from "./contexts/AuthContext";
 
