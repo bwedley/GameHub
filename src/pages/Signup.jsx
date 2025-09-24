@@ -134,7 +134,7 @@ export default function Signup() {
               <Form.Control
                 type="password"
                 name="confirmPassword"
-                placeholder="Digite sua senha"
+                placeholder="Confirme sua senha"
                 {...register("confirmPassword", {
                   required: "Confirme sua senha.",
                   validate: (v) =>
