@@ -1,10 +1,11 @@
 .navbarHeader {
-  background: linear-gradient(90deg, #9e00dd 0%, #0ff 100%);
+  /* background: linear-gradient(90deg, #9e00dd 0%, #0ff 100%); */
+  background: linear-gradient(90deg, #0ff 0%, #9e00dd 100%);
 }
 
 .navbarHeader .brandHeader {
   font-size: 1.4rem;
-  color: #0ff;
+  color: #9e00dd;
   font-weight: bold;
   letter-spacing: 2px;
   text-transform: uppercase;
